@@ -37,54 +37,114 @@ public class CSVData {
 	} 
 	
 	public static double[] getColumn(double[][] arr, int column) {
-		double[] specColumn = new double[arr.length];
-		for (int i = column; i < arr.length; i += arr.length)
+	/*	double[] specColumn = new double[arr.length];
+		for (int i = column; i < arr.length; i += arr.length) {
+			
+		} */
+		return null;
 	}
 	
-
+	/***
+	 * returns a row
+	 * @param rowIndex - the index of the row to return
+	 * @return the row we're returning
+	 */
 	public double[] getRow(int rowIndex) {
 		return null;
 	}
 	
+	/***
+	 * returns a column
+	 * @param columnIndex - the index of the column to return
+	 * @return the column we're returning
+	 */
 	public double[] getColumn(int columnIndex) {
 		return null;
 		
 	}
+	
+	/***
+	 * returns a column
+	 * @param name - the name of the column to return
+	 * @return the column we're returning
+	 */
 	public double[] getColumn(String name) {
 		return null;
 		
 	}
 	
+	/***
+	 * returns a 2D array of the rows
+	 * @param startIndex - the start index of the rows to return
+	 * @param endIndex - the end index of the row to return
+	 * @return the rows we're returning
+	 */
 	public double[][] getRows(int startIndex, int endIndex) {
 		return null;
 		
 	}
 	
+	/***
+	 * returns a 2D array of the rows
+	 * @param rowsIndexes - the index of the rows to return
+	 * @return the rows we're returning
+	 */
 	public double[][] getRows(int[] rowsIndexes) {
 		return null;
 	}
 	
+	/***
+	 * returns a 2D array of the columns
+	 * @param startIndex - the start index of the rows to return
+	 * @param endIndex - the end index of the row to return
+	 * @return the columns we're returning
+	 */
 	public double[] getColumns(int startIndex, int endIndex) {
 		return null;
 	}
 	
+	/***
+	 * returns a 2D array of the columns
+	 * @param colIndexes - the index of the rows to return
+	 * @return the columns we're returning
+	 */
 	public double[] getColumns(int colIndexes) {
 		return null;
 	}
 	
+	/***
+	 * returns a 2D array of the columns
+	 * @param colIndexes - the name of the rows to return
+	 * @return the columns we're returning
+	 */
 	public double[] getColumns(String[] colNames) {
 		return null;
 	}
 	
+	/***
+	 * return void
+	 * @param rowIndex - the index of the row to locate the index to place the value
+	 * @param colIndex - the index of the column to locate the index to place the value
+	 * @param newValue - the value to replace the value at the specified index
+	 */
 	public void setValue(int rowIndex, int colIndex, double newValue) {
 		
 	}
 	
+	/***
+	 * return void
+	 * @param rowIndex - the index of the row to locate the index to place the String
+	 * @param colIndex - the index of the column to locate the index to place the String
+	 * @param newValue - the name to insert at the specified index
+	 */
 	public void setColName(int rowIndex, int colIndex, String name) {
 		
 	}
 	
-	
+	/***
+	 * return void
+	 * @param fileName - the file to save the CSVData to
+	 */
 	public void saveToFile(String fileName) {
 		
 	}

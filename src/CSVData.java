@@ -118,7 +118,7 @@ public class CSVData {
 	 */
 	public double[] getColumn(int columnIndex) {
 		double[] column = new double[data.length];
-		for (int j = 0; j < data[0].length; j++) {
+		for (int j = 0; j < data.length; j++) {
 			column[j] = data[j][columnIndex];
 		}
 
@@ -134,7 +134,7 @@ public class CSVData {
 	 */
 	public double[] getColumn(String name) {
 		double[] column = new double[data.length];
-		for (int i = 0; i < data[0].length; i++) {
+		for (int i = 0; i < data.length; i++) {
 			if (columnNames[i] == name) {
 				column = getColumn(i);
 				return column;
@@ -181,16 +181,19 @@ public class CSVData {
 		}
 		return rows;
 	}
-	
+
 	/***
 	 * Returns the given number of rows starting from the given index.
-	 * @param startIndex - the index to start looking for the rows
-	 * @param numRows - the number of rows to look for
-	 * @return the given number of rows starting from the given index. 
+	 * 
+	 * @param startIndex
+	 *            - the index to start looking for the rows
+	 * @param numRows
+	 *            - the number of rows to look for
+	 * @return the given number of rows starting from the given index.
 	 */
 	public double[][] getNRows(int startIndex, int numRows) {
 		double[][] rows = new double[numRows][data[0].length];
-		rows = getRows(startIndex, numRows+startIndex);
+		rows = getRows(startIndex, numRows + startIndex);
 		return rows;
 	}
 
